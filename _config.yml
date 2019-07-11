@@ -1,0 +1,6 @@
+baseurl: "/Laliga"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
