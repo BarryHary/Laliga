@@ -1,0 +1,18 @@
+# Menu items
+#
+# Template
+# -
+# name: {The name of the link}
+# url: {The url of the link}
+
+- name: Home
+  url: "#home"
+
+- name: About
+  url: "#about"
+
+- name: Teams
+  url: "#teams"
+
+- name: Tabella
+  url: "#tabella"

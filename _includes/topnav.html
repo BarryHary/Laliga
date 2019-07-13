@@ -1,0 +1,16 @@
+<section class="topnav">
+
+  <div class="topnav-container">
+
+    <div class="logo"></div>
+    <nav class="navigation">
+
+      {% for item in site.data.menu %}
+      <a href={{ item.url }}>{{ item.name }}</a>
+      {% endfor %}
+
+    </nav>
+
+  </div>
+
+</section>

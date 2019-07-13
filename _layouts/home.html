@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.data.basic.main-title }}</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+
+    {% include topnav.html %}
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/function.js"></script>
+  </body>
+</html>
