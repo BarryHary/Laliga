@@ -1,9 +1,9 @@
-<section class="topnav">
+<section id="topnav">
 
   <div class="topnav-container">
 
-    <div class="logo"></div>
-    <nav class="navigation">
+    <a href="#home"><div class="logo"></div></a>
+    <nav>
 
       {% for item in site.data.menu %}
       <a href={{ item.url }}>{{ item.name }}</a>

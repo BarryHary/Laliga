@@ -1,0 +1,61 @@
+#about
+  .about-container
+    max-width: 1200px
+    margin: 0 auto
+
+    h2
+      text-align: center
+
+    p
+      margin-top: -10px
+      text-align: center
+      line-height: 2
+
+    .about-carousel
+      height: 300px
+      margin-top: 40px
+
+      .carousel-images
+        position: relative
+
+        .slide
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+
+          +size(384px, 216px)
+          // background-image was defined in function.js
+          background: center center / cover no-repeat
+          opacity: 0
+          transition: opacity 1s ease-out
+
+          &:first-child
+            opacity: 1
+
+          p
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -50px
+
+      .controlls
+        position: relative
+        max-width: 480px
+        margin: 0 auto
+        height: 100%
+
+        .move-left, .move-right
+          svg
+            height: 32px
+            position: absolute
+            top: calc(50% - 42px)
+            transform: translateY(-50%)
+            fill: rgba($black, 0.1)
+            transition: fill 200ms
+            cursor: pointer
+
+            &:hover
+              fill: $black
+        .move-right
+          svg
+            right: 0

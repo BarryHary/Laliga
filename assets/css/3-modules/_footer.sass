@@ -1,0 +1,20 @@
+footer
+  position: relative
+
+  .footer-container
+    max-width: 1200px
+    margin: 0 auto
+    min-height: 100px
+
+    &::after
+      content: ""
+      +position(absolute, 0 0 0 0)
+      z-index: -1
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/football-stadium.jpg") center center / cover fixed no-repeat
+
+    .copyright
+      color: $white
+      text-align: center
+      margin-top: 0
+      margin-bottom: 0
+      line-height: 100px

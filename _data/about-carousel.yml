@@ -1,0 +1,35 @@
+# Images for carousel
+#
+# Default url is assets/img/about-carousel/
+#
+# Template
+# -
+# name: {Name of the picture}
+# url: {Url of the picture}
+
+- name: Atletico
+  url: "atletico.jpg"
+
+- name: Barca new record
+  url: "barca-record.jpg"
+
+- name: Luis Suarez
+  url: "barcelona-suarez.jpg"
+
+- name: Andres Iniesta
+  url: "iniesta.jpg"
+
+- name: Luis vs Real Madrid
+  url: "luis-rm.jpg"
+
+- name: Madrid derby
+  url: "madrid-derby.jpg"
+
+- name: Lionel Messi
+  url: "messi-celebration.jpg"
+
+- name: Cristiano Ronaldo
+  url: "ronaldo.jpg"
+
+- name: Valencia
+  url: "valencia.jpg"

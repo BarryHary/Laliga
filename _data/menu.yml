@@ -5,8 +5,8 @@
 # name: {The name of the link}
 # url: {The url of the link}
 
-- name: Home
-  url: "#home"
+- name: Breaking News
+  url: "#news"
 
 - name: About
   url: "#about"
@@ -14,5 +14,5 @@
 - name: Teams
   url: "#teams"
 
-- name: Tabella
-  url: "#tabella"
+- name: Table
+  url: "#table"
