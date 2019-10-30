@@ -156,4 +156,4 @@ var aboutCarousel = {
   stopAutoplay: function(){
     clearInterval(this.autoplayObj);
   }
-}
+};

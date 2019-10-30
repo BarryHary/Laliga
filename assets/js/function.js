@@ -4,8 +4,9 @@
 $(document).ready(function(){
 
   newScript('assets/js/widgets/about-carousel.js', aboutCarouselOnload);
+  newScript('assets/js/widgets/teams-carousel.js', teamsCarouselOnload);
 
-  setSmoothScroll(800, -80); // speed, offset
+  setSmoothScroll(800, -50); // speed, offset
   setCopyright();
 });
 
@@ -26,21 +27,22 @@ function aboutCarouselOnload()
   aboutCarousel.setAutoplay();
 }
 
+function teamsCarouselOnload()
+{
+  teamsCarousel.uploadImages();
+}
+
 function setSmoothScroll(speed, offset)
 {
   $('a').click(function(){
 
     if (this.hash != '')
     {
-      event.preventDefault();
       var hash = this.hash;
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top + offset
-      }, speed, function(){
-
-        window.location.hash = hash;
-      });
+      }, speed);
     }
   });
 }

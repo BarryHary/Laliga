@@ -1,0 +1,35 @@
+#teams
+  padding: 30px 0
+
+  .teams-container
+    max-width: 1200px
+    margin: 0 auto
+
+    h2
+      margin-top: 0
+      text-align: center
+
+    .teams-carousel
+      font-size: 0
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+      .slide
+        +size(100px)
+        background: center center / contain no-repeat
+        margin: 10px
+        position: relative
+
+        &::before
+          content: ""
+          display: block
+          +position(absolute, null 0 -10px 0)
+          background-color: $orange
+          height: 3px
+          opacity: 0
+          transition: opacity 100ms linear
+
+        &:hover
+          &::before
+            opacity: 1
