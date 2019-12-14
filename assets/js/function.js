@@ -20,6 +20,7 @@ function newScript(url, callback)
 
 function aboutCarouselOnload()
 {
+  aboutCarousel.controllsPosition();
   aboutCarousel.uploadImages();
   aboutCarousel.setControllers();
   aboutCarousel.setViewbox();

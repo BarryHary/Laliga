@@ -7,6 +7,11 @@ var aboutCarousel = {
   autoplayObj: 0,
   autoplaySpeed: 5000,
 
+  controllsPosition: function(){
+    var centering = $('#about .controlls').parent().find('.carousel-images').height() / 2 + $('#about .controlls').height() / 2;
+    $('#about .controlls').css('bottom', centering + 'px');
+  },
+
   uploadImages: function(){
     const obj = this;
 
