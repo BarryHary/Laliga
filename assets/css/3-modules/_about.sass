@@ -79,28 +79,3 @@
       transform: translate(-50%, -50%)
       +size(70%)
       background: center center / contain no-repeat
-
-    .viewbox-controlls
-      position: relative
-      width: 80%
-      margin: 0 auto
-      height: 64px
-      top: 50%
-      transform: translateY(-50%)
-
-      .move-left, .move-right
-        display: inline-block
-        +size(64px)
-
-        svg
-          height: 64px
-          position: absolute
-          fill: rgba($white, 0.2)
-          transition: fill 200ms
-          cursor: pointer
-
-          &:hover
-            fill: rgba($white, 0.5)
-      .move-right
-        svg
-          right: 0
