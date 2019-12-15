@@ -92,6 +92,9 @@ var aboutCarousel = {
     // Click on viewbox (when display: block)
     $('#about .about-carousel-viewbox').click(function(){
 
+      $(this).find('.viewbox-controlls').click(function(){
+        console.log('sziasztok');
+      });
       // Enable scrolling (prevent bugs with scrollbar)
       var scrollTop = parseInt($('html').css('top'));
       $('html').removeClass("scroll-disabled").scrollTop(-scrollTop);
